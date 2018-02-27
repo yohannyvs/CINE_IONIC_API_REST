@@ -1,0 +1,62 @@
+<!--
+  Generated template for the PagoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="text-align: center">Pago</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list style="margin-top: 10%">
+
+    <ion-item style="margin-bottom: 10%">
+        <ion-label>Número de tarjeta</ion-label>
+        <ion-input type="text" id="num_tarjeta" name="num_tar" [(ngModel)]="num_tar" placeholder="Tarjeta" required ></ion-input>
+    </ion-item>
+    <ion-item style="margin-bottom: 10%">
+        <ion-label>Fecha de vencimiento</ion-label>
+        <ion-select [(ngModel)]="mes">
+          <ion-option value="1">01</ion-option>
+          <ion-option value="2">02</ion-option>
+          <ion-option value="3">03</ion-option>
+          <ion-option value="4">04</ion-option>
+          <ion-option value="5">05</ion-option>
+          <ion-option value="6">06</ion-option>
+          <ion-option value="7">07</ion-option>
+          <ion-option value="8">08</ion-option>
+          <ion-option value="9">09</ion-option>
+          <ion-option value="10">10</ion-option>
+          <ion-option value="11">11</ion-option>
+          <ion-option value="12">12</ion-option>
+        </ion-select>
+        <ion-select [(ngModel)]="anno">
+            <ion-option value="17">17</ion-option>
+            <ion-option value="18">18</ion-option>
+            <ion-option value="19">19</ion-option>
+            <ion-option value="20">20</ion-option>
+            <ion-option value="21">21</ion-option>
+            <ion-option value="22">22</ion-option>
+            <ion-option value="23">23</ion-option>
+            <ion-option value="24">24</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item style="margin-bottom: 10%">
+          <ion-label>Código de seguridad</ion-label>
+          <ion-input type="password" name="passw" [(ngModel)]="num_seg" placeholder="N° Seguridad" required></ion-input>
+      </ion-item>
+
+  </ion-list>
+
+  <div padding style="margin-top: 10%">
+      <button ion-button (click)="otraPagina()" color="primary" block>Pago</button>
+   </div>
+
+</ion-content>
